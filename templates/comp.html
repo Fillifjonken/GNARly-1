@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Competitions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    .well-body {
+      background-size: 100% 100%;
+    }
+    .well {
+      text-align: center;
+      height: 200px;
+    }
+    .col-sm-9 {
+      width: 100%;
+      text-align: center;
+      font-size: 120px;
+      font-family: Impact, Charcoal, sans-serif;
+      background-image: url('http://www.qparks.com/files/images/11818/293949__web_Hochkoenig_29-12-2012_action_FS_Sebastian_Huber_Ausweger_Daniel_QParks-038.jpg');
+      background: url(images/bg.jpg) no-repeat center center fixed;
+      background-size: cover;         /* Generic*/
+
+    }
+    .h4 {
+    }
+    .p {
+      text-align: center;
+    }
+
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;}
+    }
+    .jumbotron {
+     margin-bottom: 0;
+     width: 100%;
+     background: url('http://cdn.wallpapersafari.com/28/16/od3ZAx.jpg') no-repeat center center ;
+   }
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1 style="font-family:Impact, Charcoal, sans-serif">GNARly</h1>
+      <p style="color:white">Inspires Stupidity</p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">GNARly</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li class="active"><a href="{{ url_for('competition') }}">Competitions</a></li>
+          <li><a href="{{ url_for('leaderboard') }}">Leaderboards</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+    <div class="col-sm-9">
+      <div class="well">
+        <p>Åre</p>
+      </div>
+        <div class="col-sm-9">
+          <div class="well" style="background-image: url("paper.gif")">
+            <!--<div class="well-body"><img src="http://www.qparks.com/files/images/11818/293949__web_Hochkoenig_29-12-2012_action_FS_Sebastian_Huber_Ausweger_Daniel_QParks-038.jpg">
+            --><p>Sälen</p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Riksgränsen</p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Hemsedal</p>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Hafjall</p>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
