@@ -3,7 +3,7 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-- url: .*
+- url: /
   script: main.app
 
 - url: /profile/.*
@@ -15,3 +15,12 @@ libraries:
   version: "2.6"
 - name: markupsafe
   version: "0.15"
+- name: MySQLdb
+  version: "latest"
+      #
+# [START env_variables]
+env_variables:
+    CLOUDSQL_CONNECTION_NAME: gnarly-db
+    CLOUDSQL_USER: root
+    CLOUDSQL_PASSWORD: gurka
+# [END env_variables]
