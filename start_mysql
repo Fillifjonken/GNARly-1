@@ -1,0 +1,4 @@
+docker run --name mysql_cont \
+    -v /srv/docker/mysql:/var/lib/mysql \
+    -e MYSQL_ROOT_PASSWORD=gurka \
+    -d mysql/mysql-server

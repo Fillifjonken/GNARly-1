@@ -1,0 +1,1 @@
+docker run -d --name bind --publish 53:53/tcp --publish 53:53/udp --volume=/srv/docker/bind:/data sameersbn/bind:latest
